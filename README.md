@@ -1,9 +1,9 @@
 # 📦 OldPhoneDeals
-A COMP5347/COMP4347 Group Project
 
 _OldPhoneDeals is a full‑stack eCommerce web application built using the MERN stack (MongoDB, Express, React, Node.js). The platform allows users to browse, search, review, and purchase second‑hand mobile phones, while providing a dedicated admin interface for managing users, listings, reviews, and sales logs._
 
-
+<br>
+ 
 ## 🚀 Features
 
 ### 👥 User Features
@@ -12,6 +12,8 @@ _OldPhoneDeals is a full‑stack eCommerce web application built using the MERN 
 - Add items to cart and complete purchases.
 - Manage profile, listings, and comments.
 - Authentication with email verification and secure login.
+<br>
+ 
 ---
 
 ### 👥Admin Features
@@ -19,37 +21,65 @@ _OldPhoneDeals is a full‑stack eCommerce web application built using the MERN 
 - Manage users, listings, and reviews.
 - View sales logs and system activity.
 - Moderate hidden comments and audit logs.
----
+<br>
+ 
 
 ## 🛠 Tech Stack
 
-### Backend
+#### Backend
   - **Node.js** – Server runtime
   - **Express.js** – Backend framework
   - **MongoDB** – Database
   - **JWT** – Authentication and authorization
 
-### Frontend
+#### Frontend
   - **React** – Frontend UI library
   - **Node.js** – Development/build tooling
   - **npm** – Package manager
 
+<br>
+ 
 ## 📂 Project Structure
 
 ```
   project-root/
   │
   ├── backend/
-  │ ├── .env.example
-  │ └── ...
+  │ ├── .env
+  │ ├── data/
+  | │   └── ...
+  │ ├── public/
+  | │   └── ...
+  │ ├── src/
+  | │   └── ...
+  │ ├── .gitignore
+  │ ├── server.js
+  │ ├── package.json
   │
+  |
   ├── frontend/
-  │ ├── .env.example
-  │ └── ...
+  │ ├── .env
+  │ ├── js/
+  | │   └── ...
+  │ ├── public/
+  | │   └── ...
+  │ ├── src/
+  | │   └── ...
+  │ ├── .gitignore
+  │ ├── README.md
+  │ ├── package-lock.json
+  │ ├── package.json
   │
+  |
   └── README.md
+
 ```
+
+<br>
+ 
 ---
+
+<br>
 
 # ⚙️ Setup Guide
 
@@ -72,6 +102,8 @@ SENDER_EMAIL=your_email@example.com
 FRONTEND_URL=http://localhost:3000
 ```
 
+<br>
+ 
 
 ## 2️⃣Seeding the Database
 Run these commands in the backend folder after setting up mongodb:
@@ -82,6 +114,8 @@ npm i
 npm run seed
 ```
 
+<br>
+ 
 ## 3️⃣Running the Backend
 
 Run these commands in the backend folder:
@@ -91,6 +125,8 @@ npm i
 npm run dev
 ```
 
+<br>
+ 
 ## 4️⃣Running the Frontend
 
 Run this command in the frontend folder:
@@ -113,7 +149,8 @@ _In the frontend directory:_
 
 **Note:** _On macOS, port 5001 is often used by AirPlay Receiver. If you encounter port conflicts, try using a different port (like 5001, 5005, etc.) and make sure to update both .env files with the same port number. Chrome is reccomended._
 
----
+<br>
+ 
 
 ## 🔑 Accessing Admin Features
 
@@ -125,6 +162,8 @@ To access the admin login page:
 
 **Note:** _The admin login page is only accessible through the `/admin` URL. Regular users cannot access admin features through the standard login page._
 
+<br>
+ 
 ---
 #### 🌐 Local URLs
 
@@ -132,6 +171,8 @@ To access the admin login page:
   - Backend API: http://localhost:5001
 ---
 
+<br>
+ 
 #### AI Acknowledgement 
 We hereby declare and acknowledge the usage of artificial intelligence as assistance in the preparation of work for this assignment. All responsibility for architectural choices, code quality, and deliverable rests with the group.
 
