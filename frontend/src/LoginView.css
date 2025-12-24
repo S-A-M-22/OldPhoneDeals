@@ -1,0 +1,144 @@
+/*
+  LoginView.css
+  Styles for the login, signup, and auth-related forms.
+  Provides centering, compact form, and basic input/button appearance.
+*/
+
+/* ===== Layout & Container Styles ===== */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    background-color: #f5f5f5;
+    padding: 2rem;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Form Styles ===== */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* ===== Button Styles ===== */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem auto;
+    height: auto;
+    min-height: 2.5rem;
+    line-height: 1.2;
+    display: block;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+/* ===== Link Styles ===== */
+.login-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}
+
+.admin-link {
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.admin-link:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* ===== Message Styles ===== */
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #c3e6cb;
+} 

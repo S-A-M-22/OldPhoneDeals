@@ -1,0 +1,177 @@
+.HomeView {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+  
+.topBar {
+    gap: 1rem;
+    display: inline-flex;
+    margin: 1rem auto;
+    justify-content: right;
+    width: 100%;
+}
+  
+.logo {
+    height: 10rem;
+    margin-right: 2rem;
+    margin-top: -3rem;
+    margin-bottom: -3rem;
+    margin-left: 5rem;
+}
+  
+.search input, .filter select{
+    padding: auto;
+    width: 10rem;
+    height: 1.6rem;
+    border-radius: 0.2rem;
+    border: 1px solid #000000;
+    padding-left: 0.5rem;
+    font-size: small;
+}
+  
+.search button, .filter button, .home {
+    padding: auto;
+    background-color: #030303;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    height: 2rem;
+    width: 5rem;
+    transform: background-color 0.3s ease;
+    cursor: pointer;
+}
+  
+.checkOut {
+    display: inline-flex;
+}
+
+.checkOutBtn {
+    background-color: #030303;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    width: 7rem;
+    height: 2rem;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    transform: background-color 0.3s ease;
+}
+  
+.wishlist {
+    height: 3rem;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+  
+.loginBtn {
+    background-color: #030303;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    margin-left: 0.5rem;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+    transform: background-color 0.3s ease;
+}
+
+.star {
+    height: 1rem;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    vertical-align: middle;
+}
+  
+.bestDeals h2, .SoldOutSoon h2 {
+    margin-top: 5rem;
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+  
+.bestPhones, .soldSoonPhones {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+  
+.bestPhones li, .soldSoonPhones li {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.bestPhones li:hover, .soldSoonPhones li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.bestPhones li h3, .soldSoonPhones li h3 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    line-height: 1.2;
+    min-height: 2.5rem;
+    max-height: 3.5rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+  
+.bestPhones li .brand, .soldSoonPhones li .brand {
+    color: #666666;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+  
+.bestPhones li .price, .soldSoonPhones li .price {
+    color: #000000;
+    font-weight: bold;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+  
+.bestPhones li .rating {
+    color: #000000;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+  
+.bestPhones li .stock, .soldSoonPhones li .stock {
+    color: #ff0000;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+  
+.bestPhones .image, .soldSoonPhones .image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-left: -5%;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+  
+.bestPhones li:hover .image, .soldSoonPhones li:hover .image {
+    transform: scale(1.05);
+}

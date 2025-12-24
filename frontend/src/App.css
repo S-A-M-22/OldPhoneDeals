@@ -1,0 +1,382 @@
+.App {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* background: linear-gradient(30deg,  #ffffff, #001236, #000000, #404040); */
+  background: linear-gradient(40deg,  #ffffff, #001236, #404040, #9bfff3);
+  animation: gradientMove 20s ease-in-out infinite;
+  background-size: 400% 400%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.App-header h1 {
+  color: #ffffff;
+  font-size: 10rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.topBar {
+  gap: 1rem;
+  display: inline-flex;
+  margin: 1rem auto;
+  justify-content: right;
+  width: 100%;
+}
+
+.logo {
+  height: 10rem;
+  /* width: auto; */
+  margin-right: 2rem;
+  margin-top: -4rem;
+  margin-bottom: -3rem;
+  margin-left: 5rem;
+
+}
+
+.search input, .filter select{
+  padding: auto;
+  width: 7rem;
+  height: 1.6rem;
+  border-radius: 0.2rem;
+  border: 1px solid #000000;
+  padding-left: 0.5rem;
+  font-size: medium;
+}
+
+.search button, .filter button, .home {
+  padding: auto;
+  background-color: #030303;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  height: 2rem;
+  width: 5rem;
+  transform: background-color 0.3s ease;
+  cursor: pointer;
+
+}
+
+.checkOutBtn {
+  background-color: #030303;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  width: 7rem;
+  height: 2rem;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  transform: background-color 0.3s ease;
+
+}
+
+.loginBtn {
+  background-color: #030303;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+  width: 8rem;
+  height: 2rem;
+  cursor: pointer;
+  transform: background-color 0.3s ease;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App table {
+  /* border: 2px solid #000000; */
+  border: collapse;
+  width: 90%;
+  margin: 0.2em auto;
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.App table thead th {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 0.5em 0.75em; 
+  text-align: center;
+  align-self: auto;
+  /* border-bottom: 5px solid #ffffff; */
+  font-weight: bold;
+  /* border-radius: 5px; */
+}
+
+.App table th, .App table td {
+  padding: 5px;
+  text-align: left;
+}
+
+.App table tr:hover td:hover{
+  background-color: #cdcccc;
+}
+
+.App table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  border: 1px solid #000000;
+}
+
+.App table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+} 
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 40% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.star {
+  height: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.bestDeals h2, .SoldOutSoon h2 {
+  margin-top: 5rem;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.bestPhones {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* adds space between items */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bestPhones .image {
+  width: 100%;
+  /* height: 60%; */
+  border-radius: 0.5rem;
+  /* margin-bottom: 2rem; */
+  margin-left: -5%;
+  justify-content: center;
+}
+
+.bestPhones h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.bestPhones ol {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.bestPhones li {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 12rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.bestPhones li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.soldSoonPhones {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* adds space between items */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  margin-top: 2rem;
+}
+
+.soldSoonPhones img {
+  width: 100%;
+  /* height: 60%; */
+  border-radius: 0.5rem;
+  /* margin-bottom: 2rem; */
+  margin-left: -5%;
+  justify-content: center;
+}
+
+.soldSoonPhones h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.soldSoonPhones ol {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.soldSoonPhones li {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 12rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.soldSoonPhones li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.itemImg {
+  width: 40%;
+  /* height: 60%; */
+  border-radius: 0.5rem;
+  /* margin-bottom: 2rem; */
+  margin-left: 30%;
+  justify-content: center;
+}
+
+.itemImg:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.phoneDetails {
+  list-style-type: none;
+  display: flex-box;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.phoneDetails h2, h5 {
+  color: #000000;
+  /* flex: 1; */
+  /* display: flex-box; */
+  /* justify-content: flex-end; */
+  /* flex-direction: column;
+  gap: 1rem; */
+}
+
+.phoneDetails ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.phoneDetails li {
+  background-color: #c7c5c5;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 12rem;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.phoneDetails li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.welcome-message {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.admin-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.admin-btn:hover {
+    background-color: #218838;
+}
